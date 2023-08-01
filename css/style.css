@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    height: 90vh;
+    background-color: hsl(0, 0%, 94%);
+}
+
+#ageCalculator {
+    width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 180px 20px;
+    padding: 30px;
+}
+
+
+#inputNumbers {
+    position: relative;
+    width: 80%;  
+}
+
+#inputNumbers form {
+    display: flex;
+}
+
+#inputNumbers form div label {
+    font-size: 12px;
+    color: hsl(0, 1%, 44%);
+}
+
+.inputError {
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+#inputNumbers form input {
+    display: block;
+    width: 40%;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+#inputNumbers form .inputBorder {
+    border: 1px solid hsl(0, 0%, 94%);
+}
+
+#inputNumbers form div span {
+    color: red;
+}
+
+#inputNumbers button {
+    position: absolute;
+    right: -90px;
+    top: 93px;
+    background-color: hsl(259, 100%, 65%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+#inputNumbers button:hover {
+    background-color: black;
+}
+
+#inputNumbers button::after {
+    content: '↓';
+    color: white;
+    display: block;
+    font-size: 30px
+}
+
+#ageCalculator p {
+    color: hsl(0, 0%, 94%);
+}
+
+#results {
+    width: 80%;
+}
+
+#results div {
+    display: flex;
+    align-items: center;
+}
+
+#results div label {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#results div div {
+    border: none;
+    color: hsl(259, 100%, 65%);
+    width: 16%;
+    height: 60px;
+    padding: 10px 10px;
+    font-size: 70px;
+    margin: 0 -15px 0 0;
+}
